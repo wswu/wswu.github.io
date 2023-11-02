@@ -12,19 +12,16 @@
         <link href="/css/bootstrap.min.css" rel="stylesheet">
         <link href="/css/font-awesome.min.css" rel="stylesheet">
         <link href="/css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/docco.min.css">
-
-        <script src="/js/jquery-1.10.2.min.js" defer></script>
-        <script src="/js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/docco.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-JG7Y6YMT5C"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'G-JG7Y6YMT5C');
+          gtag('config', "G-JG7Y6YMT5C");
         </script> 
     </head>
 
@@ -45,16 +42,31 @@
                                 <a href="/." class="nav-link">Home</a>
                             </li>
                             <li class="navitem">
-                                <a href="/publications/" class="nav-link">Publications</a>
+                                <a href="/publications/" class="nav-link">Research</a>
                             </li>
-                            <li class="navitem">
-                                <a href="/teaching/" class="nav-link">Teaching</a>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Teaching <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="/teaching/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="/courses/cs150/" class="dropdown-item">CS 150</a>
+</li>
+                                    
+<li>
+    <a href="/courses/cs151/" class="dropdown-item">CS 151</a>
+</li>
+                                    
+<li>
+    <a href="/courses/cs495/" class="dropdown-item">CS 495</a>
+</li>
+                                </ul>
                             </li>
                             <li class="navitem">
                                 <a href="/music/" class="nav-link">Music</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="https://cs.jhu.edu/~winston/mnlp" class="nav-link">Intro NLP</a>
                             </li>
                         </ul>
 
@@ -87,12 +99,14 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
+        <script src="/js/jquery-3.6.0.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
         <script>
             var base_url = "/",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="/js/base.js" defer></script>
-        <script src="/search/main.js" defer></script>
+        <script src="/js/base.js"></script>
+        <script src="/search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">

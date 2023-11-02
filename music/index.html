@@ -12,19 +12,16 @@
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/docco.min.css">
-
-        <script src="../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/docco.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-JG7Y6YMT5C"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'G-JG7Y6YMT5C');
+          gtag('config', "G-JG7Y6YMT5C");
         </script> 
     </head>
 
@@ -45,16 +42,31 @@
                                 <a href=".." class="nav-link">Home</a>
                             </li>
                             <li class="navitem">
-                                <a href="../publications/" class="nav-link">Publications</a>
+                                <a href="../publications/" class="nav-link">Research</a>
                             </li>
-                            <li class="navitem">
-                                <a href="../teaching/" class="nav-link">Teaching</a>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Teaching <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../teaching/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../courses/cs150/" class="dropdown-item">CS 150</a>
+</li>
+                                    
+<li>
+    <a href="../courses/cs151/" class="dropdown-item">CS 151</a>
+</li>
+                                    
+<li>
+    <a href="../courses/cs495/" class="dropdown-item">CS 495</a>
+</li>
+                                </ul>
                             </li>
                             <li class="navitem active">
                                 <a href="./" class="nav-link">Music</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="https://cs.jhu.edu/~winston/mnlp" class="nav-link">Intro NLP</a>
                             </li>
                         </ul>
 
@@ -65,7 +77,7 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../teaching/" class="nav-link">
+                                <a rel="prev" href="../courses/cs495/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
@@ -102,7 +114,7 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="music">Music</h1>
-<p>I am an avid musician. At the University of Michigan, I am a member of the Qingyun Chinese Music Ensemble, where I play <a href="https://en.wikipedia.org/wiki/Erhu">erhu</a> and <a href="https://en.wikipedia.org/wiki/Zhonghu">zhonghu</a>. At JHU, I was the founder and president of the JHU Piano Club, and I also played erhu and arranged music for the Hopkins Oriental Music Ensemble. Back in 2016, I won the <a href="https://hub.jhu.edu/2016/04/27/hso-concerto-competition/">Hopkins Symphony Orchestra Concerto Competition</a>.</p>
+<p>I am an avid musician. At the University of Michigan, I was a member of the Qingyun Chinese Music Ensemble, where I played <a href="https://en.wikipedia.org/wiki/Erhu">erhu</a> and <a href="https://en.wikipedia.org/wiki/Zhonghu">zhonghu</a>. At JHU, I was the founder and president of the JHU Piano Club, and I also played erhu and arranged music for the Hopkins Oriental Music Ensemble. Back in 2016, I won the <a href="https://hub.jhu.edu/2016/04/27/hso-concerto-competition/">Hopkins Symphony Orchestra Concerto Competition</a>.</p>
 <p>I have also won several awards with music-related projects at recent hackathons including PeabodyHacks 2019, <a href="https://hub.jhu.edu/2020/02/05/peabodyhacks-hackathon-2499-em1-art1-dtd-arts/">PeabodyHacks 2020</a>, and <a href="https://devpost.com/software/talking-piano-b2mrfa">Hophacks 2020</a></p></div>
             </div>
         </div>
@@ -111,12 +123,14 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
         <script>
             var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../js/base.js" defer></script>
-        <script src="../search/main.js" defer></script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
