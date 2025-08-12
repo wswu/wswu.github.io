@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +10,13 @@
         <link rel="shortcut icon" href="img/favicon.ico">
         <title>Winston Wu</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
         <link href="css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/docco.min.css">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/docco.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-JG7Y6YMT5C"></script>
@@ -30,7 +34,7 @@
             <div class="container">
                 <a class="navbar-brand" href=".">Winston Wu</a>
                 <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -38,26 +42,29 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem active">
-                                <a href="." class="nav-link">Home</a>
+                            <li class="nav-item">
+                                <a href="." class="nav-link active" aria-current="page">Home</a>
                             </li>
-                            <li class="navitem">
-                                <a href="publications/" class="nav-link">Research</a>
+                            <li class="nav-item">
+                                <a href="publications/" class="nav-link">Publications</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
+                                <a href="group/" class="nav-link">Group</a>
+                            </li>
+                            <li class="nav-item">
                                 <a href="teaching/" class="nav-link">Teaching</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="music/" class="nav-link">Music</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="https://www2.hawaii.edu/~wswu/naclo.html" class="nav-link">NACLO</a>
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav ml-auto">
+                    <ul class="nav navbar-nav ms-md-auto">
                         <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
@@ -78,48 +85,47 @@
 
         <div class="container">
             <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
             <span class="fa fa-angle-down"></span>
         </button>
     </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="2"><a href="#about" class="nav-link">About</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h2 id="about">About</h2>
+<h2>Winston Wu</h2>
+
 <table>
-<tr style="background: white;">
-<td>
-<b>Winston Wu</b> <br>
-College Hall A, Room 4B <br>
-wswu at hawaii dot edu
-</td>
-<td>
-<img width=150 src="img/headshot.jpg">
-</td>
-</tr>
+    <tbody>
+        <tr style="background: white;">
+            <td>
+                <img width=150 src="img/headshot.jpg">
+            </td>
+            <td>
+            College Hall A, Room 4B <br>
+            wswu at hawaii dot edu
+            </td>
+        </tr>
+    </tbody>
 </table>
 
-<p>Aloha! I am an Assistant Professor of <a href="https://cse.uhh.hawaii.edu/">Computer Science</a> at the University of Hawaiʻi at Hilo. My primary research interests are in Natural Language Processing and Computational Linguistics, specifically for multilingual and low-resource applications. My broader interests span Artificial Intelligence, Machine Learning, and Data Science. My overarching research goal is to build technologies that educate and improve our lives.</p>
+<p>Aloha! I am an Assistant Professor of <a href="https://cse.uhh.hawaii.edu/">Computer Science</a> at the University of Hawaiʻi at Hilo. My primary research interests are in Natural Language Processing and Computational Linguistics, though I have broad interests that span Artificial Intelligence, Machine Learning, and Data Science. I aim to build technologies that benefit the local community.</p>
 <p>Some areas I have recently been working on:</p>
 <ul>
-<li><em>AI for Language Revitalization</em>: low-resource machine translation, speech recognition and synthesis, educational tools for the Hawaiian language</li>
-<li><em>Computational Social Science</em>: understanding societal biases and cultural values in multilingual data and large language models</li>
-<li><em>Computational Astronomy</em>: applying machine learning to large datasets from space missions such as TESS and GAIA</li>
+<li><strong>AI for Language Revitalization</strong>: low-resource and multilingual machine translation, speech recognition and synthesis, educational tools for ʻŌlelo Hawaiʻi (Hawaiian)</li>
+<li><strong>Computational Linguistics</strong>: computational etymology, lexicography, corpus linguistics</li>
+<li><strong>Computational Astronomy</strong>: applied machine learning, neural network models for large-scale multimodal datasets</li>
+<li><strong>Computational Social Science</strong>: understanding societal biases and cultural values in multilingual data and large language models</li>
 </ul>
-<p>I'm recruiting students for Spring 2024! If you are a current UH Hilo student interested in NLP or data science research, please send me an email.</p>
+<p>I'm recruiting students for Spring 2025! If you are a current UH student interested in any of the above topics, please send me an email.</p>
+<p>I also organize <a href="https://naclo.org/">NACLO</a> on the Big Island. If you are a high school student interested in competing, please see <a href="https://www2.hawaii.edu/~wswu/naclo.html">our site page</a>.</p>
 <p>Before coming to UH Hilo, I was a postdoc at the University of Michigan working with <a href="https://web.eecs.umich.edu/~mihalcea/">Rada Mihalcea</a> and <a href="https://web.eecs.umich.edu/~wangluxy/">Lu Wang</a> at the intersection of NLP and computational social science. I received my Ph.D. in computer science from Johns Hopkins University, where I was affiliated with the <a href="https://www.clsp.jhu.edu/">Center for Language and Speech Processing</a> and worked with <a href="https://www.cs.jhu.edu/~yarowsky/">David Yarowsky</a> on NLP across thousands of languages. Before that, I earned my undergraduate degrees in computer science (as a <a href="https://www.cs.utexas.edu/turing-scholars/">Turing Scholar</a>) and in Latin (salvē!) from UT Austin, where I worked with <a href="http://www.katrinerk.com/">Katrin Erk</a> on computational semantics.</p></div>
             </div>
         </div>
@@ -128,8 +134,7 @@ wswu at hawaii dot edu
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
         <script>
             var base_url = ".",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
@@ -142,7 +147,7 @@ wswu at hawaii dot edu
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <p>From here you can search these documents. Enter your search terms below.</p>
@@ -162,7 +167,7 @@ wswu at hawaii dot edu
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <table class="table">
@@ -202,6 +207,6 @@ wswu at hawaii dot edu
 </html>
 
 <!--
-MkDocs version : 1.5.3
-Build Date UTC : 2025-03-06 08:31:37.069226+00:00
+MkDocs version : 1.6.1
+Build Date UTC : 2025-08-12 19:49:45.769390+00:00
 -->
